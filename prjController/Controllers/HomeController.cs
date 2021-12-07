@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+
 namespace prjController.Controllers
 {
     public class HomeController : Controller
@@ -52,5 +53,7 @@ namespace prjController.Controllers
                 ("<p align='center'><img src='../images/{0}.png'><br>{1}</p>", index, name[index]);
             return show;
         }
+
+       
     }
 }
