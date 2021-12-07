@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>多檔案上傳</title>
+</head>
+<body>
+    <form method="post" action="@Url.Action("Create")" enctype="multipart/form-data">
+        <div>
+            <p>
+                上傳檔案1：
+                <input type="file" name="photos" id="photos" />
+            </p>
+            <p>
+                上傳檔案2：
+                <input type="file" name="photos" id="photos" />
+            </p>
+            <p>
+                上傳檔案3：
+                <input type="file" name="photos" id="photos" />
+            </p>
+            <input type="submit" value="檔案上傳" />
+        </div>
+    </form>
+    <hr />
+    @Html.ActionLink("查看全部已上傳的圖片", "ShowPhotos", "MultiFileUpload")
+
+</body>
+</html>
